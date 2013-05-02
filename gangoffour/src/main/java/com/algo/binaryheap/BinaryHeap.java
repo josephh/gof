@@ -146,6 +146,12 @@ public final class BinaryHeap {
 		Object parent = this.elements[arrayPos];
 		Object child = this.elements[childLevel - 1];
 
+		/**
+		 * TODO the implementation here is flawed: both children need to be
+		 * checked and the swapping continue until parent is greater than BOTH
+		 * children.
+		 */
+
 		// try the first child (i.e. n * 2)
 		if (greaterThan(parent, child)) {
 			// swap
