@@ -22,11 +22,21 @@
   		<artifactId>spring-test</artifactId>
   		<version>3.2.0.RELEASE</version>
   	</dependency>
-  	<dependency>
-  		<groupId>org.hibernate</groupId>
-  		<artifactId>hibernate-entitymanager</artifactId>
-  		<version>4.1.9.Final</version>
-  	</dependency>
+    <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-core</artifactId>
+        <version>4.3.0.Beta2</version>
+    </dependency>
+	<dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-entitymanager</artifactId>
+        <version>4.3.0.Beta2</version>
+    </dependency>
+	<dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>ejb3-persistence</artifactId>
+        <version>3.3.2.Beta1</version>
+    </dependency>
   	<dependency>
   		<groupId>junit</groupId>
   		<artifactId>junit</artifactId>
@@ -36,11 +46,6 @@
   		<groupId>mysql</groupId>
   		<artifactId>mysql-connector-java</artifactId>
   		<version>5.1.22</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>com.h2database</groupId>
-  		<artifactId>h2</artifactId>
-  		<version>1.3.170</version>
   	</dependency>
   	<dependency>
   		<groupId>org.springframework.data</groupId>

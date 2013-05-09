@@ -5,7 +5,7 @@ import com.gof.abstractFactory.AbstractProductA;
 public class DifferentFlavouredProduct1 extends AbstractProductA {
 
 	@Override
-	protected void doIt() {
+	public void doIt() {
 		System.out
 				.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
 		System.out

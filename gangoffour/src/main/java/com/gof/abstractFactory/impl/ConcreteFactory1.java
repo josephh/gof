@@ -6,18 +6,28 @@ import com.gof.abstractFactory.AbstractProductB;
 
 public class ConcreteFactory1 extends AbstractFactory {
 
-	public ConcreteFactory1() {
-		super.whereabouts();
+	private static AbstractFactory f;
+
+	private ConcreteFactory1() {
+		/**
+		 * no operations, just here to support enforcing singleton pattern
+		 */
 	}
 
 	@Override
-	protected AbstractProductA createProductA() {
+	public AbstractProductA createProductA() {
 		return new ConcreteProduct1();
 	}
 
 	@Override
-	protected AbstractProductB createProductB() {
+	public AbstractProductB createProductB() {
 		return new ConcreteProduct2();
 	}
 
+	public static AbstractFactory instance() {
+		// not thread safe!
+		if (f == null)
+			f = new ConcreteFactory1();
+		return f;
+	}
 }

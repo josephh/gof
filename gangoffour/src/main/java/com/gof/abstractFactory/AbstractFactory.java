@@ -20,6 +20,25 @@ package com.gof.abstractFactory;
  * </ol>
  * </P>
  * <P>
+ * <b>Notes</b>
+ * <ul>
+ * <li>Typically one instance of each factory will be enough for an application.
+ * </li>
+ * <li>Each different product requires a new subclass - even if it only differs
+ * very slightly from another class. This is typically achieved by delegating
+ * responsibility for creating subclasses to individual factories. The net
+ * result can be many factories. A different approach is to use the
+ * {@link com.gof.Prototype} pattern.</li>
+ * <li>An abstract factory that has dedicated methods for creating each product
+ * is quite regid and requires a change each time a new product is introduced -
+ * and all the classes that depend on it. "A more flexible but less safe design
+ * is to add a parameter to operations that create objects". The lack of
+ * certainty is because a client cannot know in advance which implementation of
+ * an abstract type will provided.</li>
+ * <li></li>
+ * <li></li>
+ * <li></li>
+ * </ul>
  * </P>
  * <P>
  * </P>
@@ -29,14 +48,16 @@ package com.gof.abstractFactory;
  */
 public abstract class AbstractFactory {
 
-	protected abstract AbstractProductA createProductA();
+	public abstract AbstractProductA createProductA();
 
-	protected abstract AbstractProductB createProductB();
+	public abstract AbstractProductB createProductB();
 
 	protected void whereabouts() {
 		StackTraceElement[] ste = Thread.currentThread().getStackTrace();
-		if (ste.length > 0) {
-			System.out.println("In method " + ste[0].getMethodName());
+		if (ste.length >= 1) {
+			// get previous method on the stack
+			System.out.println("In method " + ste[1].getMethodName());
 		}
 	}
+
 }

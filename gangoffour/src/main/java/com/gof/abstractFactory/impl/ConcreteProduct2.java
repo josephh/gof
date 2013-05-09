@@ -5,7 +5,7 @@ import com.gof.abstractFactory.AbstractProductB;
 public class ConcreteProduct2 extends AbstractProductB {
 
 	@Override
-	protected void doSomethingElse() {
+	public void doSomethingElse() {
 		System.out
 				.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
 		System.out

@@ -5,7 +5,7 @@ import com.gof.abstractFactory.AbstractProductB;
 public class DifferentFlavouredProduct2 extends AbstractProductB {
 
 	@Override
-	protected void doSomethingElse() {
+	public void doSomethingElse() {
 		long l = System.currentTimeMillis();
 		System.out
 				.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
