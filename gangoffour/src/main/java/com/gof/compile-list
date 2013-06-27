@@ -1,0 +1,7 @@
+com/gof/Main.java
+com/gof/factoryMethod/CreatorWithAbstractFactoryMethod.java
+com/gof/factoryMethod/client/CreatorWithConcreteFactoryMethod.java
+com/gof/factoryMethod/thingy/SomeAbstractObject.java
+com/gof/factoryMethod/thingy/SomeJoeObject.java
+com/gof/factoryMethod/thingy/SomeJackObject.java
+
