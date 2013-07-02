@@ -15,13 +15,26 @@ indent_mode=2
 [project]
 name=GoF Code Example
 base_path=/home/britford/coding/java/gof/
+description=
+file_patterns=
 
 [long line marker]
 long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=0
+current_page=1
+FILE_NAME_0=224;None;0;EUTF-8;1;1;0;%2Fhome%2Fbritford%2Fcoding%2Fjava%2Fgof%2Fgangoffour%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgof%2Fcompile-list;0;4
+FILE_NAME_1=155;Java;0;EUTF-8;1;1;0;%2Fhome%2Fbritford%2Fcoding%2Fjava%2Fgof%2Fgangoffour%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgof%2FMain.java;0;4
 
 [VTE]
 last_dir=/home/britford
+
+[build-menu]
+JavaFT_00_LB=_Compile
+JavaFT_00_CM=javac -sourcepath java -d %pgangoffour/bin -verbose
+JavaFT_00_WD=%pgangoffour/src/main/
+filetypes=Java;
+JavaFT_01_LB=
+JavaFT_01_CM=
+JavaFT_01_WD=
