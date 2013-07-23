@@ -23,18 +23,22 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=1
-FILE_NAME_0=224;None;0;EUTF-8;1;1;0;%2Fhome%2Fbritford%2Fcoding%2Fjava%2Fgof%2Fgangoffour%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgof%2Fcompile-list;0;4
-FILE_NAME_1=155;Java;0;EUTF-8;1;1;0;%2Fhome%2Fbritford%2Fcoding%2Fjava%2Fgof%2Fgangoffour%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgof%2FMain.java;0;4
+current_page=2
+FILE_NAME_0=940;Java;0;EUTF-8;1;1;0;%2Fhome%2Fbritford%2Fcoding%2Fjava%2Fgof%2Fgangoffour%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgof%2FMain.java;0;4
+FILE_NAME_1=540;None;0;EUTF-8;1;1;0;%2Fhome%2Fbritford%2Fcoding%2Fjava%2Fgof%2Fgangoffour%2Fsrc%2Fmain%2Fjava%2Fcompile-list;0;4
+FILE_NAME_2=34;Java;0;EUTF-8;1;1;0;%2Fhome%2Fbritford%2Fcoding%2Fjava%2Fgof%2Fgangoffour%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgof%2FabstractFactory%2FFactoryTest.java;0;4
 
 [VTE]
 last_dir=/home/britford
 
 [build-menu]
 JavaFT_00_LB=_Compile
-JavaFT_00_CM=javac -sourcepath java -d %pgangoffour/bin -verbose
-JavaFT_00_WD=%pgangoffour/src/main/
+JavaFT_00_CM=javac @compile-list -d %pgangoffour/bin -classpath "../../../../../libs/*" -verbose
+JavaFT_00_WD=%pgangoffour/src/main/java
 filetypes=Java;
 JavaFT_01_LB=
 JavaFT_01_CM=
 JavaFT_01_WD=
+EX_00_LB=_Execute
+EX_00_CM=java -cp gangoffour/bin com/gof/Main
+EX_00_WD=%p

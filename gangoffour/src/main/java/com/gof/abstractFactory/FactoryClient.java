@@ -1,6 +1,6 @@
 package com.gof.abstractFactory;
 
-public abstract class FactoryClient {
+public class FactoryClient {
 
 	public FactoryClient(AbstractFactory factory) {
 		super();

@@ -1,6 +1,11 @@
 package com.gof.factoryMethod.client;
 
 import com.gof.factoryMethod.CreatorWithAbstractFactoryMethod;
+import com.gof.factoryMethod.thingy.SomeAbstractObject;
+import com.gof.factoryMethod.thingy.SomeJoeObject;
+import com.gof.factoryMethod.thingy.SomeJackObject;
+
+import java.util.Random;
 
 public class CreatorWithConcreteFactoryMethod extends CreatorWithAbstractFactoryMethod {
 	
@@ -10,13 +15,15 @@ public class CreatorWithConcreteFactoryMethod extends CreatorWithAbstractFactory
 						
 	}
 	
-	public SomeObject createSomeObject(){
-		int random = java.util.Random.nextInt();
-		if(random % 2 == 0){
+	public SomeAbstractObject createSomeObject(){
+		Random r = new Random();
+		int i = r.nextInt();
+		System.out.println("Next random int, " + i);
+		if(i  % 2 == 0){
 			return new SomeJackObject();
 		}
 		else{
-			return new SomeJackObject();
+			return new SomeJoeObject();
 		}
 	}
 	

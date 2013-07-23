@@ -1,7 +1,7 @@
 package com.gof;
 
 import com.gof.factoryMethod.client.CreatorWithConcreteFactoryMethod;
-import com.gof.factoryMethod.thingy.SomeObject;
+import com.gof.factoryMethod.thingy.SomeAbstractObject;
 /*
  * Main.java
  * 
@@ -32,10 +32,10 @@ public class Main {
 		
 		System.out.println("In main...");
 		
-		SomeObject so  = 
+		SomeAbstractObject someObject  = 
 			(new CreatorWithConcreteFactoryMethod()).createSomeObject();
 		
-		so.printYourName();
+		someObject.printYourName();
 		
 		
 	}

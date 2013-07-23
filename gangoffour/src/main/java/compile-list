@@ -4,4 +4,17 @@ com/gof/factoryMethod/client/CreatorWithConcreteFactoryMethod.java
 com/gof/factoryMethod/thingy/SomeAbstractObject.java
 com/gof/factoryMethod/thingy/SomeJoeObject.java
 com/gof/factoryMethod/thingy/SomeJackObject.java
+com/gof/abstractFactory/AbstractFactory.java
+com/gof/abstractFactory/AbstractProductB.java
+com/gof/abstractFactory/AbstractProductA.java
+com/gof/abstractFactory/FactoryClient.java
+com/gof/abstractFactory/FactoryTest.java
+com/gof/abstractFactory/FactoryClient.java
+com/gof/abstractFactory/impl/ConcreteFactory1.java  
+com/gof/abstractFactory/impl/ConcreteProduct1.java  
+com/gof/abstractFactory/impl/DifferentFlavouredProduct1.java
+com/gof/abstractFactory/impl/ConcreteFactory2.java  
+com/gof/abstractFactory/impl/ConcreteProduct2.java  
+com/gof/abstractFactory/impl/DifferentFlavouredProduct2.java
+
 

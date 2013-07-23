@@ -1,3 +1,4 @@
+package com.gof.factoryMethod.thingy;
 /*
  * SomeJoeObject.java
  * 
