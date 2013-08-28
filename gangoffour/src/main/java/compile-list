@@ -16,5 +16,8 @@ com/gof/abstractFactory/impl/DifferentFlavouredProduct1.java
 com/gof/abstractFactory/impl/ConcreteFactory2.java  
 com/gof/abstractFactory/impl/ConcreteProduct2.java  
 com/gof/abstractFactory/impl/DifferentFlavouredProduct2.java
+com/gof/prototype/Prototype.java
+com/gof/prototype/impl/ConcretePrototype1.java
+com/gof/prototype/impl/ConcretePrototype2.java
 
 
