@@ -32,7 +32,10 @@ package com.gof.prototype;
  * super#clone..."; then implementing a properly functioning public
  * #clone() method is very difficult unless every superclass in an
  * object's hierarchy has also provided a properly functioning clone 
- * method.</strong>
+ * method.</strong><br/><i>Since Java 1.5 - in introducing generics, 
+ * covariant return types are now allowed - i.e. an overriding method's
+ * return type can be a subclass of the overridden method's return type.
+ * </i>
  * </p>
  */
 public abstract class Prototype implements Cloneable{
