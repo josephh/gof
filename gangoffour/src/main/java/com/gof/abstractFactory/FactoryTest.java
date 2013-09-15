@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import com.gof.abstractFactory.impl.ConcreteFactory1;
 import com.gof.abstractFactory.impl.ConcreteFactory2;
-import com.gof.abstractFactory.impl.FactoryClient;
+import com.gof.abstractFactory.FactoryClient;
 
 public class FactoryTest {
 

@@ -13,7 +13,7 @@ package com.gof.prototype;
  * that are specific to our own application?
  * </p>
  * <p>
- * The solution is have a number of prototypical classes and cloning 
+ * The solution is,  have a number of prototypical classes and cloning 
  * each of these when we need a new one...if all classes support a Clone
  * operation, then the external framework class can clone any of the 
  * objects that are handed to it (or that it knows about somehow).
@@ -38,8 +38,10 @@ package com.gof.prototype;
  * </i>
  * </p>
  */
+import java.lang.Cloneable;
+ 
 public abstract class Prototype implements Cloneable{
 	
-	public Prototype clone();
+	public abstract Prototype clone();
 
 }

@@ -21,6 +21,9 @@ package com.gof.prototype.impl;
  * 
  * 
  */
+import java.lang.Override;
+import java.lang.StringBuffer;
+import com.gof.prototype.Prototype;
 
 public class ConcretePrototype1 extends Prototype {
 	
@@ -36,9 +39,22 @@ public class ConcretePrototype1 extends Prototype {
 	private final String t = "t";
 	private final String u = "u";
 		
-	
+	@Override
 	public Prototype clone(){
 		return this.clone();
+	}
+	
+	public String toString(){
+		StringBuffer sb = new StringBuffer();
+		sb.append("Variable firstInt, value : " + firstInt + "\n");
+		sb.append("Variable secondInt, value : " + secondInt + "\n");
+		sb.append("Variable thirdInt, value : " + thirdInt + "\n");
+	
+		sb.append("Variable s, value : " + s + "\n");
+		sb.append("Variable t, value : " + t + "\n");
+		sb.append("Variable u, value : " + u + "\n");
+	
+	    return sb.toString();		
 	}
 }
 

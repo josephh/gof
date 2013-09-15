@@ -1,7 +1,5 @@
 package com.gof;
 
-import com.gof.factoryMethod.client.CreatorWithConcreteFactoryMethod;
-import com.gof.factoryMethod.thingy.SomeAbstractObject;
 /*
  * Main.java
  * 
@@ -24,7 +22,14 @@ import com.gof.factoryMethod.thingy.SomeAbstractObject;
  * 
  * 
  */
-
+import com.gof.factoryMethod.client.CreatorWithConcreteFactoryMethod;
+import com.gof.factoryMethod.thingy.SomeAbstractObject;
+import com.gof.prototype.Prototype;
+import com.gof.prototype.impl.ConcretePrototype1;
+import com.gof.prototype.impl.ConcretePrototype2;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Random;
 
 public class Main {
 	
@@ -37,6 +42,24 @@ public class Main {
 		
 		someObject.printYourName();
 		
+		Prototype p = new ConcretePrototype1();
+		Prototype q = new ConcretePrototype2();
+		
+		List<Prototype> prototypes = new ArrayList<Prototype> ();
+		
+		// for(int i = 0 ; i < 10; i++ ){
+			prototypes.add(p.clone());
+			prototypes.add(q.clone());
+		 // }
+		
+		System.out.println("Show what a clone looks like > ");
+		int i = new Random().nextInt(10);
+		prototypes.get(i).toString();
+		
+		System.out.println("Show what another one looks like > ");
+		i = new Random().nextInt(10);
+		prototypes.get(i).toString();
+				
 		
 	}
 }
