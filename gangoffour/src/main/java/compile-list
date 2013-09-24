@@ -19,5 +19,10 @@ com/gof/abstractFactory/impl/DifferentFlavouredProduct2.java
 com/gof/prototype/Prototype.java
 com/gof/prototype/impl/ConcretePrototype1.java
 com/gof/prototype/impl/ConcretePrototype2.java
+com/gof/builder/AbstractBuilder.java
+com/gof/builder/BuilderClient.java
+com/gof/builder/Director.java
+com/gof/builder/impl/ConcreteBuilderA.java
+com/gof/builder/BuiltProduct.java
 
 

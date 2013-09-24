@@ -30,35 +30,38 @@ import com.gof.prototype.impl.ConcretePrototype2;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Random;
+import com.gof.builder.BuilderClient;
 
 public class Main {
 	
 	public static void main (String args[]) {
 		
+		BuilderClient.main(new String[0]);
+		
 		System.out.println("In main...");
 		
-		SomeAbstractObject someObject  = 
-			(new CreatorWithConcreteFactoryMethod()).createSomeObject();
+		//SomeAbstractObject someObject  = 
+			//(new CreatorWithConcreteFactoryMethod()).createSomeObject();
 		
-		someObject.printYourName();
+		//someObject.printYourName();
 		
-		Prototype p = new ConcretePrototype1();
-		Prototype q = new ConcretePrototype2();
+		//Prototype p = new ConcretePrototype1();
+		//Prototype q = new ConcretePrototype2();
 		
-		List<Prototype> prototypes = new ArrayList<Prototype> ();
+		//List<Prototype> prototypes = new ArrayList<Prototype> ();
 		
-		// for(int i = 0 ; i < 10; i++ ){
-			prototypes.add(p.clone());
-			prototypes.add(q.clone());
-		 // }
+		//for(int i = 0 ; i < 10; i++ ){
+			//prototypes.add(p.clone());
+			//prototypes.add(q.clone());
+		//}
 		
-		System.out.println("Show what a clone looks like > ");
-		int i = new Random().nextInt(10);
-		prototypes.get(i).toString();
+		//System.out.println("Show what a clone looks like > ");
+		//int i = new Random().nextInt(10);
+		//prototypes.get(i).toString();
 		
-		System.out.println("Show what another one looks like > ");
-		i = new Random().nextInt(10);
-		prototypes.get(i).toString();
+		//System.out.println("Show what another one looks like > ");
+		//i = new Random().nextInt(10);
+		//prototypes.get(i).toString();
 				
 		
 	}
