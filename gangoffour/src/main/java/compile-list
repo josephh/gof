@@ -24,5 +24,10 @@ com/gof/builder/BuilderClient.java
 com/gof/builder/Director.java
 com/gof/builder/impl/ConcreteBuilderA.java
 com/gof/builder/BuiltProduct.java
+com/gof/decorator/AbstractDecorator.java
+com/gof/decorator/AbstractNumberManipulator.java
+com/gof/decorator/impl/ConcreteNumberManipulator.java
+com/gof/decorator/impl/ConcreteDecoratorA.java
+com/gof/decorator/impl/ConcreteDecoratorB.java
 
 
