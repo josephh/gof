@@ -22,15 +22,15 @@ package com.gof;
  * 
  * 
  */
-import com.gof.factoryMethod.client.CreatorWithConcreteFactoryMethod;
-import com.gof.factoryMethod.thingy.SomeAbstractObject;
-import com.gof.prototype.Prototype;
-import com.gof.prototype.impl.ConcretePrototype1;
-import com.gof.prototype.impl.ConcretePrototype2;
+import com.gof.creational.factoryMethod.client.CreatorWithConcreteFactoryMethod;
+import com.gof.creational.factoryMethod.thingy.SomeAbstractObject;
+import com.gof.creational.prototype.Prototype;
+import com.gof.creational.prototype.impl.ConcretePrototype1;
+import com.gof.creational.prototype.impl.ConcretePrototype2;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Random;
-import com.gof.builder.BuilderClient;
+import com.gof.creational.builder.BuilderClient;
 
 public class Main {
 	
