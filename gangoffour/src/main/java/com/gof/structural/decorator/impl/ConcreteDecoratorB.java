@@ -1,4 +1,4 @@
-package com.gof.creational.decorator.impl;
+package com.gof.structural.decorator.impl;
 /**
  * <p>IT'S A WRAPPER!!!</p>
  * <p>Provides a behaviour to the decorated object...</p>

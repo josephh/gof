@@ -1,4 +1,4 @@
-package com.gof.creational.decorator;
+package com.gof.structural.decorator;
 /**
  * <p>IT'S A WRAPPER!!!</p>
  * <p>Use this pattern to to extend functionality without sub-classing.

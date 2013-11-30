@@ -1,4 +1,4 @@
-package com.gof.creational.decorator.impl;
+package com.gof.structural.decorator.impl;
 /**
  * <p>A concrete 'thing' to be 'invisibly' acted on by a concrete
  * decorator /wrapper.</p>
