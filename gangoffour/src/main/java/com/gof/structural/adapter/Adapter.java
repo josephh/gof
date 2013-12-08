@@ -1,32 +1,24 @@
 package com.gof.structural.adapter;
-/*
+/**
  * Adapter.java
  * 
  * Copyright 2013 britford <britford@joe>
  * 
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- * 
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- * 
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
- * MA 02110-1301, USA.
- * 
- * 
+ * This pattern's intent is to let classes work together that otherwise
+ * can't because of incompatible interfaces.
+ * <ol>To get different classes working together, an adapter is provided 
+ * in the middle: this might mean,
+ * <li>inherit both implementations of the 2 different types (the 
+ * <strong>class</strong> version of the adapter pattern)</li>
+ * <li>compose one instance inside the other and implement the 
+ * containing object in terms of the interface of the contained object (the 
+ * <strong>object</strong> version of the adapter pattern)</li>
+ * </ol>
+ *
  */
 
 
-public class Adapter {
+public abstract class Adapter {
 	
-	public Adapter(){
-		// default no args
-		};
 }
 
