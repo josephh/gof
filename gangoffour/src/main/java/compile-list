@@ -32,5 +32,7 @@ com/gof/structural/decorator/impl/ConcreteDecoratorB.java
 com/gof/structural/adapter/TheClassTheClientKnowsAbout.java
 com/gof/structural/adapter/Adapter.java
 com/gof/structural/adapter/client/AdapterClient.java
+com/gof/structural/adapter/objectAdapter/ObjectAdapter.java
+com/gof/structural/adapter/objectAdapter/TheClassTheClientDoesNotKnowAbout.java
 
 

@@ -16,6 +16,8 @@ package com.gof.structural.adapter;
  * </ol>
  *
  */
+ import com.gof.structural.adapter.objectAdapter.ObjectAdaptee;
+ import com.gof.structural.adapter.objectAdapter.TheClassTheClientDoesNotKnowAbout;
 
 
 public class Adapter implements TheClassTheClientKnowsAbout {
@@ -29,6 +31,7 @@ public class Adapter implements TheClassTheClientKnowsAbout {
 	
 	@Override
 	public String anAccessibleMethod(int i){
+		ObjectAdaptee t = TheClassTheClientDoesNotKnowAbout;
 		String s = "Client passed in the number " + i;
 		System.out.println(s);
 		return s;

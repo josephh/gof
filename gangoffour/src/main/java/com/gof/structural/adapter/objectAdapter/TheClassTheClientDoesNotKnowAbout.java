@@ -1,6 +1,6 @@
 package com.gof.structural.adapter.objectAdapter;
-/**
- * ObjectAdaptee.java
+/*
+ * TheClassTheClientDoesNotKnowAbout.java
  * 
  * Copyright 2013 britford <britford@joe>
  * 
@@ -23,9 +23,17 @@ package com.gof.structural.adapter.objectAdapter;
  */
 
 
-public interface ObjectAdaptee {
+public class TheClassTheClientDoesNotKnowAbout {
 	
-	public String anInaccessibleMethod(long j);
+	public TheClassTheClientDoesNotKnowAbout(){
+		// nothing to see here
+		
+	}
+	
+	@Override
+	public String anInaccessibleMethod(long j){
+		return 0;	
+	}
 	
 }
 
