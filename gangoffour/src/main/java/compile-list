@@ -24,10 +24,13 @@ com/gof/creational/builder/BuilderClient.java
 com/gof/creational/builder/Director.java
 com/gof/creational/builder/impl/ConcreteBuilderA.java
 com/gof/creational/builder/BuiltProduct.java
-com/gof/creational/decorator/AbstractDecorator.java
-com/gof/creational/decorator/AbstractNumberManipulator.java
-com/gof/creational/decorator/impl/ConcreteNumberManipulator.java
-com/gof/creational/decorator/impl/ConcreteDecoratorA.java
-com/gof/creational/decorator/impl/ConcreteDecoratorB.java
+com/gof/structural/decorator/AbstractDecorator.java
+com/gof/structural/decorator/AbstractNumberManipulator.java
+com/gof/structural/decorator/impl/ConcreteNumberManipulator.java
+com/gof/structural/decorator/impl/ConcreteDecoratorA.java
+com/gof/structural/decorator/impl/ConcreteDecoratorB.java
+com/gof/structural/adapter/TheClassTheClientKnowsAbout.java
+com/gof/structural/adapter/Adapter.java
+com/gof/structural/adapter/client/AdapterClient.java
 
 

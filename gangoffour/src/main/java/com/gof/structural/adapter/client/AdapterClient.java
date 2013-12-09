@@ -21,11 +21,14 @@ package com.gof.structural.adapter.client;
  * 
  * 
  */
+import com.gof.structural.adapter.Adapter;
+import com.gof.structural.adapter.TheClassTheClientKnowsAbout;
 
-
-public class untitled {
+public class AdapterClient {
 	
 	public static void main (String args[]) {
+		
+		TheClassTheClientKnowsAbout o = new Adapter();
 		
 	}
 }

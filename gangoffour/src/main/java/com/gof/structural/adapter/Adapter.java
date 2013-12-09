@@ -11,14 +11,28 @@ package com.gof.structural.adapter;
  * <li>inherit both implementations of the 2 different types (the 
  * <strong>class</strong> version of the adapter pattern)</li>
  * <li>compose one instance inside the other and implement the 
- * containing object in terms of the interface of the contained object (the 
+ * container object in terms of the interface of the contained object (the 
  * <strong>object</strong> version of the adapter pattern)</li>
  * </ol>
  *
  */
 
 
-public abstract class Adapter {
+public class Adapter implements TheClassTheClientKnowsAbout {
+	
+	/**
+	 * Default no args constructor
+	 */
+	public Adapter(){
+		// nothing doing here
+		}
+	
+	@Override
+	public String anAccessibleMethod(int i){
+		String s = "Client passed in the number " + i;
+		System.out.println(s);
+		return s;
+	}
 	
 }
 
