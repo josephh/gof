@@ -1,5 +1,5 @@
 package com.gof.structural.adapter.objectAdapter;
-/**
+/*
  * ObjectAdaptee.java
  * 
  * Copyright 2013 britford <britford@joe>
@@ -23,9 +23,16 @@ package com.gof.structural.adapter.objectAdapter;
  */
 
 
-public interface ObjectAdaptee {
+public class ObjectAdaptee implements TheInterfaceTheClientDoesNotKnowAbout{
 	
-	public String anInaccessibleMethod(long j);
+	public ObjectAdaptee(){
+		// nothing to see here		
+	}
+	
+	@Override
+	public String anInaccessibleMethod(Long l){
+		return "Heres the otherwise inaccessible method response...which received a long " + l;
+	}
 	
 }
 

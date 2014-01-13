@@ -29,10 +29,11 @@ com/gof/structural/decorator/AbstractNumberManipulator.java
 com/gof/structural/decorator/impl/ConcreteNumberManipulator.java
 com/gof/structural/decorator/impl/ConcreteDecoratorA.java
 com/gof/structural/decorator/impl/ConcreteDecoratorB.java
-com/gof/structural/adapter/TheClassTheClientKnowsAbout.java
-com/gof/structural/adapter/Adapter.java
+com/gof/structural/adapter/TheInterfaceTheClientKnowsAbout.java
+com/gof/structural/adapter/ObjectAdapter.java
+com/gof/structural/adapter/ClassAdapter.java
 com/gof/structural/adapter/client/AdapterClient.java
-com/gof/structural/adapter/objectAdapter/ObjectAdapter.java
-com/gof/structural/adapter/objectAdapter/TheClassTheClientDoesNotKnowAbout.java
+com/gof/structural/adapter/objectAdapter/ObjectAdaptee.java
+com/gof/structural/adapter/objectAdapter/TheInterfaceTheClientDoesNotKnowAbout.java
 
 

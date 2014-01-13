@@ -21,14 +21,17 @@ package com.gof.structural.adapter.client;
  * 
  * 
  */
-import com.gof.structural.adapter.Adapter;
-import com.gof.structural.adapter.TheClassTheClientKnowsAbout;
+import com.gof.structural.adapter.ObjectAdapter;
+import com.gof.structural.adapter.ClassAdapter;
+import com.gof.structural.adapter.TheInterfaceTheClientKnowsAbout;
 
 public class AdapterClient {
 	
 	public static void main (String args[]) {
 		
-		TheClassTheClientKnowsAbout o = new Adapter();
+		int i = 12;
+		TheInterfaceTheClientKnowsAbout candidateClass = new ObjectAdapter();
+		System.out.println(candidateClass.anAccessibleMethod(12));
 		
 	}
 }
