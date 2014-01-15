@@ -14,7 +14,9 @@ package com.gof.structural.adapter;
  * container object in terms of the interface of the contained object (the 
  * <strong>object</strong> version of the adapter pattern)</li>
  * </ol>
- * <strong></strong>
+ * <strong>An adapter can sometimes sit further up a class hierarchy - where it would
+ * otherwise be impractical to try and adapt lots of subclasses - and adapt the interface 
+ * of a parent superclass.</strong>
  */
 import com.gof.structural.adapter.objectAdapter.TheInterfaceTheClientDoesNotKnowAbout;
 import com.gof.structural.adapter.objectAdapter.ObjectAdaptee;
