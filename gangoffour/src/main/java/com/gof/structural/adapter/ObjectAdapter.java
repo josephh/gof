@@ -14,7 +14,7 @@ package com.gof.structural.adapter;
  * container object in terms of the interface of the contained object (the 
  * <strong>object</strong> version of the adapter pattern)</li>
  * </ol>
- *
+ * <strong></strong>
  */
 import com.gof.structural.adapter.objectAdapter.TheInterfaceTheClientDoesNotKnowAbout;
 import com.gof.structural.adapter.objectAdapter.ObjectAdaptee;
@@ -29,6 +29,7 @@ public class ObjectAdapter implements TheInterfaceTheClientKnowsAbout  {
 	 */
 	public ObjectAdapter(){
 		objectAdaptee = new ObjectAdaptee();
+		System.out.println("Object adapter's constructor...(composing the adapted type)" );
 		}
 	
 	@Override

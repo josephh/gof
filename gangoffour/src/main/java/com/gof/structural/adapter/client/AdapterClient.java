@@ -29,10 +29,16 @@ public class AdapterClient {
 	
 	public static void main (String args[]) {
 		
+		/**
+		 * try out the object version of the adapter pattern...
+		 */
+		TheInterfaceTheClientKnowsAbout candidate = null;
 		int i = 12;
-		TheInterfaceTheClientKnowsAbout candidateClass = new ObjectAdapter();
-		System.out.println(candidateClass.anAccessibleMethod(12));
+		candidate = new ObjectAdapter();
+		System.out.println(candidate.anAccessibleMethod(12));
 		
+		candidate = new ClassAdapter();
+		System.out.println(candidate.anAccessibleMethod(23));
 	}
 }
 

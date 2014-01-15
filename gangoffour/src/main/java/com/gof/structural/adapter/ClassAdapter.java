@@ -18,26 +18,26 @@ package com.gof.structural.adapter;
  */
  import com.gof.structural.adapter.objectAdapter.ObjectAdaptee;
  import com.gof.structural.adapter.objectAdapter.TheInterfaceTheClientDoesNotKnowAbout;
- import com.gof.structural.adapter.classAdapter.TheInterfaceTheClientDoesKnowAbout;
+ import com.gof.structural.adapter.TheInterfaceTheClientKnowsAbout;
 
-
-public class ClassAdapter implements TheInterfaceTheClientDoesKnowAbout, TheInterfaceTheClientDoesNotKnowAbout {
+public class ClassAdapter implements TheInterfaceTheClientKnowsAbout, TheInterfaceTheClientDoesNotKnowAbout {
 	
 	/**
 	 * Default no args constructor
 	 */
-	public Adapter(){
-		// nothing doing here
+	public ClassAdapter(){
+		System.out.println("Class adapter's constructor..." );
 		}
 	
 	@Override
 	public String anAccessibleMethod(Integer i){
-		return "";
+		return "Class adapter implements the known interface..." + anInaccessibleMethod(new Long(i));
+		
 	}
 	
 	@Override
-	public String anAccessibleMethod(Long l){
-		return "";
+	public String anInaccessibleMethod(Long l){
+		return "...as well as the unknown type's interface! (which received a long " + l + ")";
 	}
 	
 }

@@ -31,14 +31,15 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Random;
 import com.gof.creational.builder.BuilderClient;
+import com.gof.structural.adapter.client.AdapterClient;
 
 public class Main {
 	
 	public static void main (String args[]) {
-		
-		BuilderClient.main(new String[0]);
-		
+				
 		System.out.println("In main...");
+				
+		AdapterClient.main(new String[0]);
 		
 		//SomeAbstractObject someObject  = 
 			//(new CreatorWithConcreteFactoryMethod()).createSomeObject();

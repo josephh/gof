@@ -25,7 +25,6 @@ package com.gof.structural.adapter.objectAdapter;
 
 public interface TheInterfaceTheClientDoesNotKnowAbout {
 		
-	@Override
 	public String anInaccessibleMethod(Long l);
 	
 }
